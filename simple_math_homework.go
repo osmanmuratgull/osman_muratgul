@@ -27,4 +27,5 @@ func main() {
 	res = totalthree(1, 2, 3, 2)
 	fmt.Println("1+2+3/2 = ", res)
 
+	//Algorithm that calculates simple math
 }
