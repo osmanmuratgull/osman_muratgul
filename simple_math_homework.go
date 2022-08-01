@@ -2,29 +2,32 @@ package main
 
 import "fmt"
 
-func totalone(a int, b int) int {
+func totalOne(a int, b int) int {
 
 	return a + b
 }
 
-func totaltwo(a, b, c int) int {
+func totalTwo(a, b, c int) int {
 	return a + b + c
 }
 
-func totalthree(a, b, c, d int) int {
+func totalThree(a, b, c, d int) int {
 
+	//TODO
+	//toplama işlemi olarak başlık var fakat içeride bölme yapılıyor 
+	//fonksiyon ismi kod ile uyumlu olmalıdır her zaman
 	return a + b + c/d
 }
 
 func main() {
 
-	res := totalone(1, 2)
+	res := totalOne(1, 2)
 	fmt.Println("1+2 =", res)
 
-	res = totaltwo(1, 2, 3)
+	res = totalTwo(1, 2, 3)
 	fmt.Println("1+2+3 =", res)
 
-	res = totalthree(1, 2, 3, 2)
+	res = totalThree(1, 2, 3, 2)
 	fmt.Println("1+2+3/2 = ", res)
 
 	//Algorithm that calculates simple math
