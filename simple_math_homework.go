@@ -28,4 +28,5 @@ func main() {
 	fmt.Println("1+2+3/2 = ", res)
 
 	//Algorithm that calculates simple math
+	//Osman Muratgul
 }
