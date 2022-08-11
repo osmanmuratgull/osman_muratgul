@@ -9,7 +9,6 @@ func main() {
 	var numberPatients [7]int = [7]int{25, 86, 45, 10, 20, 58, 78}
 
 	totalNumber(numberPatients)
-
 }
 
 func totalNumber(numberPatients [7]int) {
@@ -22,9 +21,13 @@ func totalNumber(numberPatients [7]int) {
 
 		var nextPatients int = numberPatients[j]
 
-		if maximumPatient == totalPatients {
+		{
 
-			break
+			if maximumPatient == totalPatients {
+
+				break
+
+			}
 
 			if (maximumPatient - totalPatients) >= nextPatients {
 
@@ -47,5 +50,4 @@ func totalNumber(numberPatients [7]int) {
 		}
 
 	}
-
 }
