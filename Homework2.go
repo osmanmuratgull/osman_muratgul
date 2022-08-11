@@ -1,7 +1,3 @@
-// You can edit this code!
-
-// Click here and start typing.
-
 package main
 
 import "fmt"
@@ -29,10 +25,6 @@ func totalNumber(numberPatients [7]int) {
 		if maximumPatient == totalPatients {
 
 			break
-
-		}
-
-		{
 
 			if (maximumPatient - totalPatients) >= nextPatients {
 
