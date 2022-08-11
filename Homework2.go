@@ -6,6 +6,9 @@ package main
 
 import "fmt"
 
+//TODO 
+//camelCase konusuna tekrar bakıp kodu düzeltelim
+
 func main() {
 
 	fmt.Println("PROGRAM START")
@@ -22,10 +25,14 @@ func TotalNumberOfPatientsİnTheHospital(NumberOfPatients [7]int) {
 
 	var TotalPatients int = 10
 
+	//TODO
+	// 7 yerine kullanılacak arrayın len() ile uzunluğunu kullanalım
 	for j := 0; j < 7; j++ {
 
 		var NextPatients int = NumberOfPatients[j]
 
+		//TODO
+		// buradaki {} kullanımının gereği varmı ?
 		{
 
 			if MaximumPatient == TotalPatients {
