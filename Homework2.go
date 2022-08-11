@@ -6,50 +6,39 @@ package main
 
 import "fmt"
 
-//TODO 
-//camelCase konusuna tekrar bakıp kodu düzeltelim
-
 func main() {
 
 	fmt.Println("PROGRAM START")
 
-	var NumberOfPatients [7]int = [7]int{25, 86, 45, 10, 20, 58, 78}
+	var numberPatients [7]int = [7]int{25, 86, 45, 10, 20, 58, 78}
 
-	TotalNumberOfPatientsİnTheHospital(NumberOfPatients)
+	totalNumber(numberPatients)
 
 }
 
-func TotalNumberOfPatientsİnTheHospital(NumberOfPatients [7]int) {
+func totalNumber(numberPatients [7]int) {
 
-	var MaximumPatient int = 200
+	var maximumPatient int = 200
 
-	var TotalPatients int = 10
+	var totalPatients int = 10
 
-	//TODO
-	// 7 yerine kullanılacak arrayın len() ile uzunluğunu kullanalım
-	for j := 0; j < 7; j++ {
+	for j := 0; j < len(numberPatients); j++ {
 
-		var NextPatients int = NumberOfPatients[j]
+		var nextPatients int = numberPatients[j]
 
-		//TODO
-		// buradaki {} kullanımının gereği varmı ?
-		{
+		if maximumPatient == totalPatients {
 
-			if MaximumPatient == TotalPatients {
-
-				break
-
-			}
+			break
 
 		}
 
 		{
 
-			if (MaximumPatient - TotalPatients) >= NextPatients {
+			if (maximumPatient - totalPatients) >= nextPatients {
 
-				TotalPatients += NextPatients
+				totalPatients += nextPatients
 
-				fmt.Println(TotalPatients)
+				fmt.Println(totalPatients)
 
 			} else {
 
@@ -57,7 +46,7 @@ func TotalNumberOfPatientsİnTheHospital(NumberOfPatients [7]int) {
 
 			}
 
-			if TotalPatients < 40 {
+			if totalPatients < 40 {
 
 				fmt.Println("PLEASE REGISTER PATIENT")
 
@@ -68,4 +57,3 @@ func TotalNumberOfPatientsİnTheHospital(NumberOfPatients [7]int) {
 	}
 
 }
-
